@@ -1,0 +1,7 @@
+com.pervll.creator
+com.pervll.creator.client
+com.pervll.creator.client.renderer.entity
+com.pervll.creator.item
+com.pervll.creator.utils
+com.pervll.creator.world.entity
+com.pervll.creator.world.entity.projectile

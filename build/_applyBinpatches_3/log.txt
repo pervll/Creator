@@ -1,0 +1,14 @@
+Java Launcher: C:\Program Files\Java\jdk-17.0.2\bin\java.exe
+Arguments: '--clean, C:\Users\Jason\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.18.2-20220228.144236\joined-1.18.2-20220228.144236-srg.jar, --output, C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.2-40.0.17\forge-1.18.2-40.0.17-binpatched.jar, --apply, C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.2-40.0.17\forge-1.18.2-40.0.17-binpatches.lzma'
+Classpath:
+ - C:\Users\Jason\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\binarypatcher\1.0.12\binarypatcher-1.0.12-fatjar.jar
+Working directory: C:\Users\Jason\Desktop\forge modding\Creator\build\_applyBinpatches_3
+Main class: net.minecraftforge.binarypatcher.ConsoleTool
+====================================
+Applying: 
+  Clean:     C:\Users\Jason\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\joined\1.18.2-20220228.144236\joined-1.18.2-20220228.144236-srg.jar
+  Output:    C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.2-40.0.17\forge-1.18.2-40.0.17-binpatched.jar
+  KeepData:  false
+  Unpatched: false
+  Patches:   C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.2-40.0.17\forge-1.18.2-40.0.17-binpatches.lzma
+Loading patches file: C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.2-40.0.17\forge-1.18.2-40.0.17-binpatches.lzma
