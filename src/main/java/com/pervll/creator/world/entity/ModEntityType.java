@@ -13,8 +13,6 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModEntityType {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, Creator.MOD_ID);
 
-    //      ARROW = register("arrow", EntityType.Builder.of(Arrow::new, MobCategory.MISC).sized(0.5F, 0.5F).clientTrackingRange(4).updateInterval(20));
-
     public static final RegistryObject<EntityType<GodArrow>> GOD_ARROW = ENTITIES.register("god_arrow", () -> EntityType.Builder.<GodArrow>of(GodArrow::new, MobCategory.MISC)
             .sized(0.5F,0.5F)
             .clientTrackingRange(4)
