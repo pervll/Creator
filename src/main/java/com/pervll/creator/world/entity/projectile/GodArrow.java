@@ -1,7 +1,6 @@
 package com.pervll.creator.world.entity.projectile;
 
 import com.pervll.creator.world.entity.ModEntityType;
-import com.pervll.creator.utils.Registry;
 import com.pervll.creator.world.level.GodArrowExplosion;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.world.damagesource.DamageSource;
@@ -13,11 +12,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.ExplosionDamageCalculator;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraftforge.network.NetworkHooks;
-import org.apache.commons.lang3.ObjectUtils;
 
 public class GodArrow extends AbstractArrow {
 
@@ -32,23 +29,18 @@ public class GodArrow extends AbstractArrow {
     @Override
     protected void onHitEntity(EntityHitResult pResult) {
         super.onHitEntity(pResult);
-        /*for(int i=1;i<=3;i++) {
-            this.level.explode(this, getBlockX(), this.getBlockY(), this.getBlockZ(), 10.0F, false, Explosion.BlockInteraction.DESTROY);
-        }*/
-        GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY);
+        GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY, 150d);
         g.explode();
         this.discard();
     }
 
-    /*@Override
-    protected void onHitBlock(BlockHitResult p_36755_) {
-        super.onHitBlock(p_36755_);
-        BlockState blockHit = this.level.getBlockState(p_36755_.getBlockPos());
+    @Override
+    protected void onHitBlock(BlockHitResult pResult) {
+        super.onHitBlock(pResult);
+        GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY,150d);
+        g.explode();
         this.discard();
-        for(int i=1;i<=3;i++) {
-            this.level.explode(this, getBlockX(), this.getBlockY(), this.getBlockZ(), 10.0F, false, Explosion.BlockInteraction.DESTROY);
-        }
-    }*/
+    }
 
     @Override
     public ItemStack getPickupItem() {

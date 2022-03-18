@@ -34,6 +34,7 @@ public class GodArrowExplosion extends Explosion {
     private final double x;
     private final double y;
     private final double z;
+    private final double addDamage;
     @javax.annotation.Nullable
     private final Entity source;
     private final float radius;
@@ -43,7 +44,7 @@ public class GodArrowExplosion extends Explosion {
     private final Map<Player, Vec3> hitPlayers = Maps.newHashMap();
     private final Vec3 position;
 
-    public GodArrowExplosion(Level pLevel, @Nullable Entity pSource, @Nullable DamageSource pDamageSource, @Nullable ExplosionDamageCalculator pDamageCalculator, double pToBlowX, double pToBlowY, double pToBlowZ, float pRadius, boolean pFire, BlockInteraction pBlockInteraction) {
+    public GodArrowExplosion(Level pLevel, @Nullable Entity pSource, @Nullable DamageSource pDamageSource, @Nullable ExplosionDamageCalculator pDamageCalculator, double pToBlowX, double pToBlowY, double pToBlowZ, float pRadius, boolean pFire, BlockInteraction pBlockInteraction, double addDamage) {
         super(pLevel, pSource, pDamageSource, pDamageCalculator, pToBlowX, pToBlowY, pToBlowZ, pRadius, pFire, pBlockInteraction);
         this.level = pLevel;
         this.source = pSource;
@@ -56,6 +57,7 @@ public class GodArrowExplosion extends Explosion {
         this.damageSource = pDamageSource == null ? DamageSource.explosion(this) : pDamageSource;
         this.damageCalculator = pDamageCalculator == null ? this.makeDamageCalculator(pSource) : pDamageCalculator;
         this.position = new Vec3(this.x, this.y, this.z);
+        this.addDamage = addDamage;
     }
 
     private ExplosionDamageCalculator makeDamageCalculator(@javax.annotation.Nullable Entity pEntity) {
@@ -137,7 +139,7 @@ public class GodArrowExplosion extends Explosion {
                         d9 /= d13;
                         double d14 = (double)getSeenPercent(vec3, entity);
                         double d10 = (1.0D - d12) * d14;
-                        entity.hurt(this.getDamageSource(), (float)((int)((d10 * d10 + d10) / 2.0D * 7.0D * (double)f2 + 1.0D)+200));
+                        entity.hurt(this.getDamageSource(), (float)((int)((d10 * d10 + d10) / 2.0D * 7.0D * (double)f2 + 1.0D)+this.addDamage));
                         double d11 = d10;
                         if (entity instanceof LivingEntity) {
                             d11 = ProtectionEnchantment.getExplosionKnockbackAfterDampener((LivingEntity)entity, d10);
