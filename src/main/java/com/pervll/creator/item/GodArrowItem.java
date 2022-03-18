@@ -16,6 +16,7 @@ import net.minecraft.world.level.Level;
 public class GodArrowItem extends ArrowItem {
     public final float damage;
 
+
     public GodArrowItem(float damage) {
         super(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS));
         this.damage=damage;
