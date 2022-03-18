@@ -8,6 +8,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 @OnlyIn(Dist.CLIENT)
 public class GodArrowRenderer extends ArrowRenderer<GodArrow> {
@@ -17,7 +19,7 @@ public class GodArrowRenderer extends ArrowRenderer<GodArrow> {
 
     @Override
     public ResourceLocation getTextureLocation(GodArrow godArrow) {
-        Item referenceItem = godArrow.getPickupItem().getItem();
-        return new ResourceLocation(Creator.MOD_ID, "textures/entity/projectiles" + referenceItem.getRegistryName().getPath() + ".png");
+        return new ResourceLocation(Creator.MOD_ID, "textures/entity/projectiles/god_arrow.png");
     }
+
 }
