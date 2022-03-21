@@ -1,4 +1,4 @@
-C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1\forge-1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1.jar
+C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1\forge-1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1-recomp.jar
 C:\Users\Jason\.gradle\caches\forge_gradle\minecraft_repo\versions\1.18.1\client-extra.jar
 C:\Users\Jason\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.18.1-39.1.2\b352c14baa73757733127753063e5f11a6e40850\javafmllanguage-1.18.1-39.1.2.jar
 C:\Users\Jason\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.18.1-39.1.2\5da05513d2dd0706e4b90a671f708c7bb4164192\mclanguage-1.18.1-39.1.2.jar

@@ -1,8 +1,12 @@
 package com.pervll.creator.client;
 
 import com.pervll.creator.Creator;
+import com.pervll.creator.world.entity.ModEntityType;
+import com.pervll.creator.world.entity.monster.Alaif;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,5 +18,10 @@ public class t {
         Player player = event.getPlayer();
         //final new AttributeModifier(player.getUUID(), "Emblem Speed Boost", 0.3D, AttributeModifier.Operation.ADDITION);
         player.setHealth(200f);
+    }
+
+    @SubscribeEvent
+    public static void registerAttributes(EntityAttributeCreationEvent event) {
+        event.put(ModEntityType.ALAIF.get(), Alaif.createAttributes().build());
     }
 }
