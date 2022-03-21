@@ -1,6 +1,6 @@
 package com.pervll.creator.item;
 
-import com.pervll.creator.utils.Registry;
+import com.pervll.creator.util.Registry;
 import com.pervll.creator.world.entity.projectile.GodArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;

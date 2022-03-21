@@ -1,6 +1,6 @@
 package com.pervll.creator.item;
 
-import com.pervll.creator.utils.Registry;
+import com.pervll.creator.util.Registry;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;

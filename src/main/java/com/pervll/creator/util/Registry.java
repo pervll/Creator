@@ -1,4 +1,4 @@
-package com.pervll.creator.utils;
+package com.pervll.creator.util;
 
 import com.pervll.creator.Creator;
 import com.pervll.creator.item.GodArrowItem;

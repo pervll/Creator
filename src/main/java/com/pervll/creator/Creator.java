@@ -1,7 +1,7 @@
 package com.pervll.creator;
 
 import com.pervll.creator.world.entity.ModEntityType;
-import com.pervll.creator.utils.Registry;
+import com.pervll.creator.util.Registry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
