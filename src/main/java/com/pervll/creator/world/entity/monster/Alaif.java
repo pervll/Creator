@@ -1,5 +1,6 @@
 package com.pervll.creator.world.entity.monster;
 
+import com.pervll.creator.Creator;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
@@ -14,9 +15,13 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.Random;
 
+@Mod.EventBusSubscriber(modid = Creator.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class Alaif extends Monster {
     public Alaif(EntityType<Alaif> entityType, Level level) {
         super(entityType, level);
@@ -35,14 +40,15 @@ public class Alaif extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 40D)
-                .add(Attributes.ATTACK_DAMAGE, 5D)
-                .add(Attributes.MOVEMENT_SPEED, 1D);
+                .add(Attributes.MAX_HEALTH, 1D)
+                .add(Attributes.ATTACK_DAMAGE, 1D)
+                .add(Attributes.MOVEMENT_SPEED, 0.2D);
     }
 
+    @SubscribeEvent
     public void onDeath() {
-        if (this.getHealth() == 0) {
-            this.level.getNearestPlayer(this, 100D).hurt(DamageSource.FALL, 10F);
+        if (this.getHealth() <= 0) {
+            this.setHealth(1f);
         }
     }
 

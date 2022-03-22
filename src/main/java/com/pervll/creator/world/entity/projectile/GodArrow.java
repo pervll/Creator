@@ -37,8 +37,9 @@ public class GodArrow extends AbstractArrow {
     @Override
     protected void onHitBlock(BlockHitResult pResult) {
         super.onHitBlock(pResult);
-        GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY,150d);
-        g.explode();
+        //GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY,150d);
+        //g.explode();
+        this.level.explode(this, pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 6, Explosion.BlockInteraction.DESTROY);
         this.discard();
     }
 
