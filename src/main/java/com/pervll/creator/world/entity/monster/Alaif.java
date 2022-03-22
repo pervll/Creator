@@ -2,9 +2,7 @@ package com.pervll.creator.world.entity.monster;
 
 import com.pervll.creator.Creator;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -16,7 +14,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.Random;
@@ -43,13 +40,6 @@ public class Alaif extends Monster {
                 .add(Attributes.MAX_HEALTH, 1D)
                 .add(Attributes.ATTACK_DAMAGE, 1D)
                 .add(Attributes.MOVEMENT_SPEED, 0.2D);
-    }
-
-    @SubscribeEvent
-    public void onDeath() {
-        if (this.getHealth() <= 0) {
-            this.setHealth(1f);
-        }
     }
 
     public static boolean canSpawn(EntityType<Alaif> entity, ServerLevelAccessor levelAccess, MobSpawnType spawnType,

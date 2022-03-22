@@ -15,7 +15,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -40,11 +42,11 @@ public class ClientModEventSubscriber {
     }
 
     @SubscribeEvent
-    public void onAlaifDie(LivingAttackEvent event) {
-        LivingEntity e = event.getEntityLiving();
-        if(e instanceof Alaif) {
-            if (e.getHealth() <= 0) {
-                e.setHealth(1f);
+    public static void onAlaifDied(LivingHurtEvent event) {
+        if (event.getEntityLiving() instanceof Alaif) {
+            if (event.getEntityLiving().getHealth()<=event.getAmount()) {
+                event.setCanceled(true);
+                event.getEntityLiving().setHealth(1f);
             }
         }
     }
