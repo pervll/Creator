@@ -37,7 +37,7 @@ public class Alaif extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 1D)
+                .add(Attributes.MAX_HEALTH, 10D)
                 .add(Attributes.ATTACK_DAMAGE, 1D)
                 .add(Attributes.MOVEMENT_SPEED, 0.2D);
     }

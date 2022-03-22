@@ -41,13 +41,4 @@ public class ClientModEventSubscriber {
         event.registerEntityRenderer(ModEntityType.ALAIF.get(), AlaifRenderer::new);
     }
 
-    @SubscribeEvent
-    public static void onAlaifDied(LivingHurtEvent event) {
-        if (event.getEntityLiving() instanceof Alaif) {
-            if (event.getEntityLiving().getHealth()<=event.getAmount()) {
-                event.setCanceled(true);
-                event.getEntityLiving().setHealth(1f);
-            }
-        }
-    }
 }
