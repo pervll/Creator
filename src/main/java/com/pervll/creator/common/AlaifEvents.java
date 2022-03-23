@@ -1,4 +1,4 @@
-package com.pervll.creator.client;
+package com.pervll.creator.common;
 
 import com.pervll.creator.Creator;
 import com.pervll.creator.client.renderer.entity.AlaifRenderer;
@@ -31,8 +31,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import org.jline.utils.DiffHelper;
 
-@Mod.EventBusSubscriber(modid = Creator.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public class ClientEventSubscriber {
+@Mod.EventBusSubscriber(modid = Creator.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
+public class AlaifEvents {
     @SubscribeEvent
     public static void onAlaifDied(LivingAttackEvent event) {
         if (event.getEntityLiving() instanceof Alaif) {
@@ -40,13 +40,6 @@ public class ClientEventSubscriber {
                 event.getEntityLiving().setHealth(1f);
                 event.setCanceled(true);
             }
-        }
-    }
-
-    @SubscribeEvent
-    public static void onArrow(ItemAttributeModifierEvent event) {
-        if(event.getItemStack().getEquipmentSlot().equals(EquipmentSlot.HEAD)) {
-            event.addModifier(Attributes.MAX_HEALTH, new AttributeModifier("Speed Modify", 0.3d, AttributeModifier.Operation.ADDITION));
         }
     }
 }

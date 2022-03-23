@@ -152,7 +152,7 @@
 [223月2022 11:45:25.145] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.pervll.creator.client.ClientEventSubscriber to FORGE
 [223月2022 11:45:25.149] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.pervll.creator.client.ClientModEventSubscriber to MOD
 [223月2022 11:45:25.151] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.pervll.creator.client.t to FORGE
-[223月2022 11:45:25.153] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.pervll.creator.common.ModEvents to MOD
+[223月2022 11:45:25.153] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.pervll.creator.common.CommonModEvents to MOD
 [223月2022 11:45:25.154] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.pervll.creator.world.entity.monster.Alaif to MOD
 [223月2022 11:45:25.183] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 39.1 from cpw.mods.modlauncher.TransformingClassLoader@10fda3d0
 [223月2022 11:45:25.183] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge version 39.1.2
