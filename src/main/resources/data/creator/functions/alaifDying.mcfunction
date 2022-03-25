@@ -1,1 +1,0 @@
-execute as @e[type=creator:alaif,tag=dying] run data modify entity @s NoAI set value true
