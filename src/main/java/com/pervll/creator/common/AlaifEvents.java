@@ -38,6 +38,7 @@ public class AlaifEvents {
         if (event.getEntityLiving() instanceof Alaif) {
             if (event.getEntityLiving().getHealth() - event.getAmount() <= 1) {
                 event.getEntityLiving().setHealth(1f);
+                event.getEntityLiving().addTag("dying");
                 event.setCanceled(true);
             }
         }
