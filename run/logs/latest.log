@@ -1,84 +1,79 @@
-[027月2022 13:26:56.369] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserveruserdev, --gameDir, ., --fml.forgeVersion, 39.1.2, --fml.mcVersion, 1.18.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20211210.034407, nogui]
-[027月2022 13:26:56.377] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.2 by Oracle Corporation
-[027月2022 13:26:56.550] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/86136/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%2327!/ Service=ModLauncher Env=SERVER
-[027月2022 13:26:59.418] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserveruserdev' with arguments [--gameDir, ., nogui]
-[027月2022 13:27:07.779] [modloading-worker-0/INFO] [com.pervll.creator.Creator/]: Loading Config: D:\Minecraft forge projects\Creator1\run\config\creator-server.toml
-[027月2022 13:27:07.779] [modloading-worker-0/INFO] [com.pervll.creator.Creator/]: Build server_config: D:\Minecraft forge projects\Creator1\run\config\creator-server.toml
-[027月2022 13:27:07.781] [modloading-worker-0/INFO] [com.pervll.creator.Creator/]: Loaded Config: D:\Minecraft forge projects\Creator1\run\config\creator-server.toml
-[027月2022 13:27:07.827] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 39.1.2, for MC 1.18.1 with MCP 20211210.034407
-[027月2022 13:27:07.830] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v39.1.2 Initialized
-[027月2022 13:27:09.747] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[027月2022 13:27:11.482] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[027月2022 13:27:11.597] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 39.1.2 Target: null
-[027月2022 13:27:14.700] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/86136/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1/forge-1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1-recomp.jar%2377!/assets/.mcassetsroot' uses unexpected schema
-[027月2022 13:27:14.701] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/86136/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1/forge-1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1-recomp.jar%2377!/data/.mcassetsroot' uses unexpected schema
-[027月2022 13:27:15.659] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[027月2022 13:27:15.661] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[027月2022 13:27:15.693] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[027月2022 13:27:15.700] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[027月2022 13:27:15.702] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[027月2022 13:27:15.713] [main/INFO] [net.minecraft.server.packs.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, resources, 
-[027月2022 13:27:24.512] [Worker-Main-13/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[027月2022 13:27:31.228] [Worker-Main-13/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1141 advancements
-[027月2022 13:27:34.047] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.18.1
-[027月2022 13:27:34.048] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[027月2022 13:27:34.048] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[027月2022 13:27:34.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[027月2022 13:27:34.308] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on 192.168.1.12:25565
-[027月2022 13:27:34.328] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
-[027月2022 13:27:34.713] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[027月2022 13:27:34.713] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
-[027月2022 13:27:34.713] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[027月2022 13:27:34.713] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
-[027月2022 13:27:34.780] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[027月2022 13:27:34.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[027月2022 13:27:36.812] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:36.828] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:36.837] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:36.846] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:36.993] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:37.493] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:37.990] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:38.492] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:39.073] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[027月2022 13:27:39.492] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
-[027月2022 13:27:40.058] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
-[027月2022 13:27:40.494] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
-[027月2022 13:27:45.836] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.837] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.838] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.838] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.839] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.839] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.839] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.839] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.839] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.840] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[027月2022 13:27:45.990] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 11%
-[027月2022 13:27:46.692] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 26%
-[027月2022 13:27:47.167] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 34%
-[027月2022 13:27:47.491] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 45%
-[027月2022 13:27:47.991] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 62%
-[027月2022 13:27:48.490] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 78%
-[027月2022 13:27:48.993] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 88%
-[027月2022 13:27:49.494] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 96%
-[027月2022 13:27:49.593] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 14604 ms
-[027月2022 13:27:49.594] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (14.863s)! For help, type "help"
-[027月2022 13:27:49.604] [Server thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
-[027月2022 13:27:49.669] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[027月2022 13:27:59.075] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@1a704730
-[027月2022 13:27:59.094] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jason[/192.168.1.12:59368] logged in with entity id 174 at (67.49806888922727, 95.0, 81.97090415865014)
-[027月2022 13:27:59.132] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jason joined the game
-[027月2022 13:28:09.677] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Summoned new Zombie]
-[027月2022 13:28:14.501] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Set own game mode to Survival Mode]
-[027月2022 13:28:18.935] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Set own game mode to Creative Mode]
-[027月2022 14:31:42.121] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[027月2022 14:31:42.122] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[027月2022 14:31:42.129] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[027月2022 14:31:42.129] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[027月2022 14:31:42.228] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[027月2022 14:31:42.229] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[027月2022 14:31:42.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[027月2022 14:31:42.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[027月2022 14:31:42.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[027月2022 14:31:42.244] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[027月2022 14:40:44.659] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserveruserdev, --gameDir, ., --fml.forgeVersion, 39.1.2, --fml.mcVersion, 1.18.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20211210.034407, nogui]
+[027月2022 14:40:44.665] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.2 by Oracle Corporation
+[027月2022 14:40:44.826] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/86136/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%2327!/ Service=ModLauncher Env=SERVER
+[027月2022 14:40:47.278] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserveruserdev' with arguments [--gameDir, ., nogui]
+[027月2022 14:40:53.790] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 39.1.2, for MC 1.18.1 with MCP 20211210.034407
+[027月2022 14:40:53.793] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v39.1.2 Initialized
+[027月2022 14:40:53.880] [modloading-worker-0/INFO] [com.pervll.creator.Creator/]: Loading Config: D:\Minecraft forge projects\Creator1\run\config\creator-server.toml
+[027月2022 14:40:53.881] [modloading-worker-0/INFO] [com.pervll.creator.Creator/]: Build server_config: D:\Minecraft forge projects\Creator1\run\config\creator-server.toml
+[027月2022 14:40:53.883] [modloading-worker-0/INFO] [com.pervll.creator.Creator/]: Loaded Config: D:\Minecraft forge projects\Creator1\run\config\creator-server.toml
+[027月2022 14:40:55.130] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[027月2022 14:40:55.787] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[027月2022 14:40:56.562] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 39.1.2 Target: null
+[027月2022 14:40:58.602] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/86136/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1/forge-1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1-recomp.jar%2377!/assets/.mcassetsroot' uses unexpected schema
+[027月2022 14:40:58.602] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/86136/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1/forge-1.18.1-39.1.2_mapped_parchment_2021.12.19-1.18.1-recomp.jar%2377!/data/.mcassetsroot' uses unexpected schema
+[027月2022 14:40:59.367] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[027月2022 14:40:59.369] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[027月2022 14:40:59.429] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[027月2022 14:40:59.431] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[027月2022 14:40:59.432] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[027月2022 14:40:59.442] [main/INFO] [net.minecraft.server.packs.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, resources, 
+[027月2022 14:41:08.644] [Worker-Main-11/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[027月2022 14:41:13.389] [Worker-Main-11/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1141 advancements
+[027月2022 14:41:15.488] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.18.1
+[027月2022 14:41:15.488] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[027月2022 14:41:15.488] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[027月2022 14:41:15.489] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[027月2022 14:41:15.662] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on 192.168.1.12:25565
+[027月2022 14:41:15.679] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[027月2022 14:41:16.164] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[027月2022 14:41:16.165] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[027月2022 14:41:16.165] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[027月2022 14:41:16.165] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[027月2022 14:41:16.221] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[027月2022 14:41:16.406] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[027月2022 14:41:17.437] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:17.447] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:17.455] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:17.907] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:18.408] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:18.909] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:19.407] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[027月2022 14:41:19.908] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
+[027月2022 14:41:20.584] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
+[027月2022 14:41:20.967] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.315] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.315] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.316] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.318] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.319] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.320] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.320] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.320] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 8%
+[027月2022 14:41:25.407] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
+[027月2022 14:41:26.018] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 31%
+[027月2022 14:41:26.407] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 41%
+[027月2022 14:41:26.908] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 56%
+[027月2022 14:41:27.423] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+[027月2022 14:41:27.968] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 95%
+[027月2022 14:41:28.053] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 11647 ms
+[027月2022 14:41:28.054] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (11.873s)! For help, type "help"
+[027月2022 14:41:28.061] [Server thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[027月2022 14:41:28.081] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[027月2022 14:42:15.870] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@67dc26f8
+[027月2022 14:42:15.881] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jason[/192.168.1.12:49224] logged in with entity id 166 at (67.78080130252938, 95.0, 81.79437335441587)
+[027月2022 14:42:15.899] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Jason joined the game
+[027月2022 14:42:27.030] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Summoned new Zombie]
+[027月2022 14:42:39.102] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Set the time to 13000]
+[027月2022 14:42:42.353] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Summoned new Zombie]
+[027月2022 14:43:25.925] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Jason: Summoned new Zombie]
+[027月2022 14:52:38.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[027月2022 14:52:38.483] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[027月2022 14:52:38.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[027月2022 14:52:38.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[027月2022 14:52:38.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[027月2022 14:52:38.592] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[027月2022 14:52:38.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[027月2022 14:52:38.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[027月2022 14:52:38.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[027月2022 14:52:38.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
