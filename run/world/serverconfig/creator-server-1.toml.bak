@@ -1,0 +1,3 @@
+#Maximum damage monster will take per attack.
+#Range: 0.01 ~ 1.0
+lockPercent = 0.1
