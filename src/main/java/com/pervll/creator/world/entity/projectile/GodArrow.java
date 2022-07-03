@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraftforge.network.NetworkHooks;
+import org.jetbrains.annotations.NotNull;
 
 public class GodArrow extends AbstractArrow {
 
@@ -27,15 +28,15 @@ public class GodArrow extends AbstractArrow {
     }
 
     @Override
-    protected void onHitEntity(EntityHitResult pResult) {
+    protected void onHitEntity(@NotNull EntityHitResult pResult) {
         super.onHitEntity(pResult);
-        GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY, 150d);
+        GodArrowExplosion g = new GodArrowExplosion(this.level, this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY, 150d);
         g.explode();
         this.discard();
     }
 
     @Override
-    protected void onHitBlock(BlockHitResult pResult) {
+    protected void onHitBlock(@NotNull BlockHitResult pResult) {
         super.onHitBlock(pResult);
         //GodArrowExplosion g = new GodArrowExplosion(this.level,this, DamageSource.arrow(this, this), new ExplosionDamageCalculator(), pResult.getLocation().x, pResult.getLocation().y, pResult.getLocation().z, 20, false, Explosion.BlockInteraction.DESTROY,150d);
         //g.explode();
@@ -44,12 +45,12 @@ public class GodArrow extends AbstractArrow {
     }
 
     @Override
-    public ItemStack getPickupItem() {
+    public @NotNull ItemStack getPickupItem() {
         return ItemStack.EMPTY;
     }
 
     @Override
-    public Packet<?> getAddEntityPacket() {
+    public @NotNull Packet<?> getAddEntityPacket() {
         return NetworkHooks.getEntitySpawningPacket(this);
     }
 }

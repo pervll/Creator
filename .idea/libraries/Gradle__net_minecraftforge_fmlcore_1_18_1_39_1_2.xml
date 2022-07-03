@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.minecraftforge:fmlcore:1.18.1-39.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.18.1-39.1.2/3d7ff7ca6899c79c32bd099963f4bc8d34ba58f8/fmlcore-1.18.1-39.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.18.1-39.1.2/803bba682abf119a83dfb382a2800f39d5aea42e/fmlcore-1.18.1-39.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
